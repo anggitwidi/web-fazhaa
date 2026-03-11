@@ -7,9 +7,7 @@
 
 
     {{-- Yang Terbaru --}}
-    <section>
-        YANG TERBARU
-    </section>
+    <x-yang-terbaru />
 
 
     {{-- Temukan Kendaraan --}}

@@ -16,5 +16,5 @@
         alt="{{ $name }}"
         class="mx-auto h-64 object-contain"
     >
-
+    
 </div>
