@@ -1,23 +1,67 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
-
 @section('content')
 
     {{-- Hero Section --}}
-    <section class="relative">
-        <img src="/images/hero.jpg" class="w-full h-[500px] object-cover">
+    <x-hero />
+
+
+    {{-- Yang Terbaru --}}
+    <section>
+        YANG TERBARU
     </section>
 
-    {{-- Latest Cars --}}
-    <section class="py-16 container mx-auto">
-        <h2 class="text-2xl font-bold mb-8">Lihat Yang Terbaru</h2>
 
-        <x-car-card 
-            image="/images/raize.png"
-            name="Raize"
-            price="Rp 200.000.000"
-        />
+    {{-- Temukan Kendaraan --}}
+    <section class="bg-gray-100 py-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <h2 class="text-4xl font-semibold text-center mb-14">
+                Temukan Kendaraan Baru Anda
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <x-car-card 
+                    name="RANGGA"
+                    image="images/rangga.png"
+                />
+
+                <x-car-card 
+                    name="FORTUNER"
+                    image="images/fortuner.png"
+                />
+
+                <x-car-card 
+                    name="AGYA"
+                    image="images/agya.png"
+                />
+
+                <x-car-card 
+                    name="ZENIX"
+                    image="images/zenix.png"
+                />
+
+            </div>
+
+            <div class="flex justify-end mt-12">
+                <a href="/mobil"
+                class="flex items-center gap-2 text-lg font-medium hover:underline">
+
+                    Lihat Lengkap →
+
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    {{-- Kontak --}}
+    <section>
+        KONTAK
     </section>
 
 @endsection
